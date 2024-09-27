@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*font-face {
+    font-family: "Sedgwick Ave";
+    src: url(midias/Fontes/SedgwickAve-Regular.ttf);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #013A63;
+    color: #333;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 200px;
+}
+
+.cabeçalho{
+    width: 100vw;
+    height: 330px;
+}
+
+.cabeçalho1{
+    width: 78vw;
+    height: 290px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    background-color: #6A0DAD;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #FFD700;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main{
+    margin-top: 150px;
+}
+section {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-section{
+    max-width: 410px;
+}
+
+h2{
+    font-family: "Sedgwick Ave";
+}
+
+h6{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.8);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+button {
+    background-color: #e32235;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #00a0eb;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #333;
+    cursor: not-allowed;
+}
+
+#produtos {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+#produtos h2 {
+    font-size: 2.5rem;
+    color: #4B0082;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.produto-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.produto-item {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.produto-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produto-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.produto-item p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.produto-item .btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #4B0082;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.produto-item .btn:hover {
+    background-color: #DAA520;
+    color: #FFF;
+}
+
+@media (max-width: 768px) {
+    #produtos h2 {
+        font-size: 2rem;
+    }
+
+    .produto-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .produto-item p {
+        font-size: 1rem;
+    }
+
+    .produto-item .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+.ouca-agora {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.ouca-agora h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 30px;
+}
+
+.playlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo: número de colunas adaptável */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.player {
+    background-color: #2C2C2E; /* Fundo escuro para os players */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+video{
+    max-width: 300px;
+}
+
+.player:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Sombra mais intensa ao passar o mouse */
+}
+
+.player h3 {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .ouca-agora h2 {
+        font-size: 2rem;
+    }
+
+    .player h3 {
+        font-size: 1.3rem;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a{
+    color: #FFD700;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

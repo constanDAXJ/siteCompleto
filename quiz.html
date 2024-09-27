@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz de Bem-Estar</title>
+</head>
+<body>
+    <section class="quiz-section">
+       
+        <header  class="cabeçalho1">
+            <img src="midias/Imagens/cabeçalho 3.png" alt="Banner da Empresa" width="100%" height="auto">
+          <div>
+              <nav>
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="contato.html">Contato</a>
+                <a href="ouçaAgora.html">Ouça Agora</a>
+                <a href="quiz.html">Quiz</a>
+              </nav>
+          </div>
+      </header>
+ 
+        <form id="quiz-form">
+          <h1>Quiz da beat factory</h1>
+          <section class="question">
+            <h3>1. O que a Beats Factory faz?</h3>
+            <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()">A) Produção de filmes</label><br>
+            <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()">B) Produção de jogos</label><br>
+            <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()">C) Produção musical</label><br>
+            <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()">D) Venda de instrumentos</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>2. Qual é a missão da Beats Factory?</h3>
+            <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()">A) Vender álbuns de música</label><br>
+            <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()">B) Fornecer uma plataforma para artistas emergentes</label><br>
+            <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()">C) Criar estúdios de gravação em várias cidades</label><br>
+            <label><input type="radio" name="q2" value="D" onclick="disableOptions('q2'), playSound()">D) Apoiar bandas famosas</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>3. Quais serviços a Beats Factory oferece?</h3>
+            <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()">A) Gravação, mixagem, masterização e produção de videoclipes</label><br>
+            <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()">B) Gestão de carreiras musicais</label><br>
+            <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()">C) Venda de equipamentos de áudio</label><br>
+            <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()">D) Treinamento em produção musical</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>4. Quais tipos de artistas a Beats Factory apoia?</h3>
+            <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()">A) Artistas independentes e novos talentos</label><br>
+            <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()">B) Bandas de rock famosas</label><br>
+            <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()">C) Somente DJs</label><br>
+            <label><input type="radio" name="q4" value="D" onclick="disableOptions('q4'), playSound()">D) Apenas rappers</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>5. Qual é a visão da Beats Factory?</h3>
+            <label><input type="radio" name="q5" value="A" onclick="disableOptions('q5'), playSound()">A) Tornar-se o maior estúdio de gravação do mundo</label><br>
+            <label><input type="radio" name="q5" value="B" onclick="disableOptions('q5'), playSound()">B) Tornar-se o estúdio mais inovador e acessível para artistas independentes</label><br>
+            <label><input type="radio" name="q5" value="C" onclick="disableOptions('q5'), playSound()">C) Oferecer música grátis para todos</label><br>
+            <label><input type="radio" name="q5" value="D" onclick="disableOptions('q5'), playSound()">D) Criar gravadoras em todos os continentes</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>6. Quem é considerado o "Rei do Pop"?</h3>
+            <label><input type="radio" name="q6" value="A" onclick="disableOptions('q6'), playSound()">A) Elvis Presley</label><br>
+            <label><input type="radio" name="q6" value="B" onclick="disableOptions('q6'), playSound()">B) Michael Jackson</label><br>
+            <label><input type="radio" name="q6" value="C" onclick="disableOptions('q6'), playSound()">C) Prince</label><br>
+            <label><input type="radio" name="q6" value="D" onclick="disableOptions('q6'), playSound()">D) Freddie Mercury</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>7. Qual foi o nome do último álbum lançado por Tupac antes de sua morte?</h3>
+            <label><input type="radio" name="q7" value="A" onclick="disableOptions('q7'), playSound()">A) All Eyez on Me</label><br>
+            <label><input type="radio" name="q7" value="B" onclick="disableOptions('q7'), playSound()">B) Me Against the World</label><br>
+            <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()">C) 2Pacalypse Now</label><br>
+            <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()">D) The Don Killuminati: The 7 Day Theory</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>8. Qual é o álbum mais famoso dos Racionais MC's, considerado um marco na história do rap nacional?</h3>
+            <label><input type="radio" name="q8" value="A" onclick="disableOptions('q8'), playSound()">A) Sobrevivendo no Inferno</label><br>
+            <label><input type="radio" name="q8" value="B" onclick="disableOptions('q8'), playSound()">B) Nada como um dia após o outro dia</label><br>
+            <label><input type="radio" name="q8" value="C" onclick="disableOptions('q8'), playSound()">C) Raio X Brasil</label><br>
+            <label><input type="radio" name="q8" value="D" onclick="disableOptions('q8'), playSound()">D) Cores & Valores</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>9. Quem é o artista brasileiro conhecido como "O Poeta dos Excluídos" no rap?</h3>
+            <label><input type="radio" name="q9" value="A" onclick="disableOptions('q9'), playSound()">A) Emicida</label><br>
+            <label><input type="radio" name="q9" value="B" onclick="disableOptions('q9'), playSound()">B) Criolo</label><br>
+            <label><input type="radio" name="q9" value="C" onclick="disableOptions('q9'), playSound()">C) Sabotage</label><br>
+            <label><input type="radio" name="q9" value="D" onclick="disableOptions('q9'), playSound()">D) Racionais MC's</label><br>
+          </section>
+ 
+          <section class="question">
+            <h3>10. Qual era o nome artístico do rapper Christopher Wallace, conhecido por suas rimas poderosas?</h3>
+            <label><input type="radio" name="q10" value="A" onclick="disableOptions('q10'), playSound()">A) Tupac</label><br>
+            <label><input type="radio" name="q10" value="B" onclick="disableOptions('q10'), playSound()">B) Big Pun</label><br>
+            <label><input type="radio" name="q10" value="C" onclick="disableOptions('q10'), playSound()">C) Nas</label><br>
+            <label><input type="radio" name="q10" value="D" onclick="disableOptions('q10'), playSound()">D) The Notorious B.I.G. (Biggie Smalls)</label><br>
+          </section>
+         
+          <button type="submit" id="submitButton">Enviar Respostas</button>
+        </form>
+ 
+        <audio id="venceusom" src="midias/Audio/venceu.mp3" preload="auto"></audio>
+        <audio id="selecionasom" src="midias/Audio/seleciona.mp3" preload="auto"></audio>
+        <audio id="perdeusom" src="midias/Audio/perdeu.mp3" preload="auto"></audio>
+ 
+        <section id="result"></section>
+    </section>
+ 
+    <footer>
+        <p>&copy; 2024 Beats Factory - Desenvolvido por <a href="https://www.instagram.com/_const4n/">Guilherme Constantino Nascimento</a>.</p>
+    </footer>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
