@@ -1,8 +1,5 @@
 document.getElementById('quiz-form').addEventListener('submit', function(event) {
     event.preventDefault();
- 
- 
-
     submitQuiz();
 });
  
@@ -58,7 +55,7 @@ function submitQuiz() {
  
     if (score === totalQuestions) {
         document.getElementById('venceusom').play();
-    } else if (score < 4) {
+    } else if (score < 5) {
         document.getElementById('perdeusom').play();
     }
 }
